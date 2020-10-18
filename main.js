@@ -77,13 +77,13 @@ var DomController = {
 
 var VigenereAlgorithm = {
   encrypt: function(source, key) {
-    return (source + key) % 26;
+    return (source + key) % 27;
   },
   decrypt: function(cipher, key) {
-    return (cipher - key + 26) % 26;
+    return (cipher - key + 27) % 27;
   },
   assign: function(value) {
-    var abc = "abcdefghijklmnopqrstuvwxyz";
+    var abc = "abcdefghijklmnopqrstuvwxyz ";
     return (isFinite(value)) ? abc.charAt(+value) : abc.indexOf(value);
   }
 }

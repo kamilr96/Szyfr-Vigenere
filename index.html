@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szyfr Vigenere</title>
+    <link rel="stylesheet" href="main.css" />
+    
+</head>
+<body>
+    <h1>Szyfr Vigenere Szyfrowanie / Deszyfrowanie</h1>
+<div class="cage">
+    <form id="encdecForm">
+        <h2>Formularz wejściowy</h2>
+        <fieldset id="inputField">
+            <div class="row">
+                <div class="label" style="text-shadow: 3px 3px 5px black;"><label for="ip">Wprowadź tekst : </label></div>
+                <div class="box"><input type="text" id="ip" /></div>
+            </div><br clear="both" />
+            <div class="row">
+                <div class="label" style="text-shadow: 3px 3px 5px black;"><label for="key"> Klucz : </label></div>
+                <div class="box"><input type="text" id="key" /></div>
+            </div><br clear="both" />
+            <div class="row" style="text-shadow: 3px 3px 5px black;">
+                <label for="enc">Odszyfruj</label><input type="radio" name="slct" id="enc" value="encrypt" checked="checked" />
+                <label for="dec">Zaszyfruj</label><input type="radio" name="slct" id="dec" value="decrypt" />
+            </div><br clear="both" /><hr />
+            <div class="row">
+                <div class="label" style="text-shadow: 3px 3px 5px black;"><label for="result">Wynik : </label></div>
+                <div class="box"><input type="text" id="result" /></div>
+            </div><br clear="both" />
+            <div class="row">
+                <input type="submit" value="Konwertuj" name="KonwertujButton" />
+                <input type="reset" value="Resetuj" name="resetButton" />
+            </div><br clear="both" />
+        </fieldset>
+    </form>
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+body{
+    margin: 3%;
+    color: rgb(196,196,196);
+    background-image: url(https://cdn.hipwallpaper.com/i/14/92/KqY6uV.jpg);
+    background-color: rgb(153,153,153);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    font-family: "Gruppo", sans-serif;
+}
+h1,h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px black;
+    transition: transform .4s;
+}
+
+h1:hover {
+    color: rgb(16, 53, 219);
+    transform: scale(1.2);
+}
+div.cage{
+    zoom: 1;
+    width: 60%;
+    overflow: hidden;
+    border: 1px solid rgb(16,16,16);
+    border-radius: 2em;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    color: rgb(255,255,255);
+    background-color: rgb(89,89,89);
+    box-shadow: 0 5px 15px #333333;
+    -moz-box-shadow: 0 5px 15px #333333;
+    -webkit-box-shadow: 0 5px 15px #333333;
+    opacity: 0.8;
+    filter: alpha(opacity=70);
+    -ms-filter: "alpha(opacity=70)";
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+
+#inputField{
+    border: none;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+.label{
+    text-align: left;
+    float: left;
+}
+.box{
+    width: 100%;
+    text-align: left;
+    float: right;
+}
+#enc{
+    margin-right: 10%;
+}
+input[type="text"]{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.25em;
+    margin-bottom: 1em;
+}
+input[name="convert"]{
+    width: 50%;
+    height: 3em;
+}
+input[name="clearButton"]{
+    width: 30%;
+    height: 3em;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  
+}
+

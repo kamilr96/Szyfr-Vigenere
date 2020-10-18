@@ -15,7 +15,7 @@ addEvent(window, "load", function init() {
     (evt.preventDefault) ? evt.preventDefault(): evt.returnValue = false;
     var values = DomController.getValues(inputs);
     if (!values.flg) {
-      DomController.setResult("( N/A )");
+      DomController.setResult("( Niepoprawnie uzupełnione dane )");
       return false;
     }
     var isEncrypt = DomController.checkRadio(inputs);

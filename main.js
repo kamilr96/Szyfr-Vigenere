@@ -56,7 +56,7 @@ var DomController = {
     }
     for (target in values) {
       if (values[target] !== values.flg) {
-        if (values[target].match(/[^A-Z]/i) || values[target] == "") {
+        if (values[target].match(/[^(A-Z\s)]/i) || values[target] == "") {
           values.flg = false;
         }
       }
@@ -83,7 +83,7 @@ var VigenereAlgorithm = {
     return (cipher - key + 27) % 27;
   },
   assign: function(value) {
-    var abc = "abcdefghijklmnopqrstuvwxyz ";
+    var abc = " abcdefghijklmnopqrstuvwxyz";
     return (isFinite(value)) ? abc.charAt(+value) : abc.indexOf(value);
   }
 }
